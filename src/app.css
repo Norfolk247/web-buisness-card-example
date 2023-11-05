@@ -1,0 +1,30 @@
+.page-enter-active {
+    animation: slide-in 300ms forwards;
+}
+.page-exit-active {
+    animation: slide-out 300ms forwards;
+}
+.modal-dialog {
+    width: fit-content;
+    max-width: 1200px;
+}
+@keyframes slide-in {
+    0%{
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-out {
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
